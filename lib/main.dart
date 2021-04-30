@@ -6,9 +6,6 @@ import 'package:todo_mascotas_admin/app/modules/login/login_page.dart';
 import 'package:todo_mascotas_admin/app/modules/splash/splash_page.dart';
 
 void main() {
-  ResponsiveSizingConfig.instance.setCustomBreakpoints(
-    ScreenBreakpoints(desktop: 1200, tablet: 650, watch: 200),
-  );
   runApp(MyApp());
 }
 
@@ -18,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        primaryColor: Colors.teal,
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
