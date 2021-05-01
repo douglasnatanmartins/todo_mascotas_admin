@@ -130,9 +130,12 @@ class MobileScreem extends StatelessWidget {
                               padding: const EdgeInsets.only(
                                   left: 15, right: 15, top: 12),
                               child: Material(
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(25)
+                                ),
                                 color: Colors.transparent,
                                 elevation: 18,
-                                shadowColor: Colors.grey[300],
+                                shadowColor: Colors.grey[200],
                                 child: TextFormField(
                                   decoration: InputDecoration(
                                       filled: true,
@@ -166,9 +169,12 @@ class MobileScreem extends StatelessWidget {
                               padding: const EdgeInsets.only(
                                   left: 15, right: 15, top: 12),
                               child: Material(
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(25)
+                                ),
                                 color: Colors.transparent,
                                 elevation: 18,
-                                shadowColor: Colors.grey[300],
+                                shadowColor: Colors.grey[200],
                                 child: TextFormField(
                                   decoration: InputDecoration(
                                       filled: true,

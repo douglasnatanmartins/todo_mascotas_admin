@@ -45,9 +45,12 @@ class WidgetRigthWhite extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 30, right: 30, top: 20),
                     child: Material(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(25)
+                      ),
                       color: Colors.transparent,
                       elevation: 22,
-                      shadowColor: Colors.grey[300],
+                      shadowColor: Colors.grey[100],
                       child: TextFormField(
                         decoration: InputDecoration(
                             prefixIcon: Icon(Icons.email,color: Colors.teal.shade700,),
@@ -77,9 +80,12 @@ class WidgetRigthWhite extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 30, right: 30, top: 16),
                     child: Material(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25)
+                      ),
                       color: Colors.transparent,
                       elevation: 20,
-                      shadowColor: Colors.grey[300],
+                      shadowColor: Colors.grey[100],
                       child: TextFormField(
                         decoration: InputDecoration(
                             prefixIcon: Icon(Icons.lock_rounded,color: Colors.teal.shade700,),
@@ -133,7 +139,7 @@ class WidgetRigthWhite extends StatelessWidget {
                 child: ElevatedButton(
                     onPressed: (){},
                     style: ElevatedButton.styleFrom(
-                        elevation: 10,
+                        elevation: 6,
                         padding: const EdgeInsets.only(left: 45, right: 45, top: 15, bottom: 15),
                         primary: Colors.teal.shade400,
                         shape: RoundedRectangleBorder(

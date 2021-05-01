@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:todo_mascotas_admin/app/modules/home/home_page.dart';
 //import 'package:responsive_framework/responsive_framework.dart';
 import 'package:todo_mascotas_admin/app/modules/login/login_page.dart';
 import 'package:todo_mascotas_admin/app/modules/splash/splash_page.dart';
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
             return MaterialPageRoute(builder: (BuildContext context)=> LoginPage());*/
             case '/':
             default:
-              return MaterialPageRoute(builder: (BuildContext context)=> SplashPage());
+              return MaterialPageRoute(builder: (BuildContext context)=> HomePage());
           }
         });
   }
