@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_login/flutter_login.dart';
 import 'package:todo_mascotas_admin/app/modules/login/ui/tablet/widgets/widget_left_teal_tablet.dart';
 import 'package:todo_mascotas_admin/app/modules/login/ui/tablet/widgets/widget_rigth_white_tablet.dart';
 

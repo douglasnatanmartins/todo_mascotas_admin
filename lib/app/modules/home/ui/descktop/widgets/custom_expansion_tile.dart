@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomExpansionTile extends StatelessWidget {
@@ -35,14 +34,14 @@ class CustomExpansionTile extends StatelessWidget {
             Icon(
               iconExpansionTile,
               color: Colors.white,
-              size: 20,
+              size: 18,
             ),
             const SizedBox(
               width: 15,
             ),
             Text(
               expansionTitle,
-              style: GoogleFonts.delius(color: Colors.white, fontSize: 16),
+              style: GoogleFonts.roboto(color: Colors.white, fontSize: 14),
             )
           ],
         ),
@@ -58,7 +57,6 @@ class CustomExpansionTile extends StatelessWidget {
                   children: [
                     Icon(
                       iconChild,
-                    //  FontAwesomeIcons.folderPlus,
                       color: Colors.white,
                       size: 15,
                     ),
@@ -68,7 +66,7 @@ class CustomExpansionTile extends StatelessWidget {
                     Text(
                       childTitle,
                       style:
-                          GoogleFonts.delius(color: Colors.white, fontSize: 12),
+                          GoogleFonts.roboto(color: Colors.white, fontSize: 12),
                     ),
                   ],
                 ),
