@@ -14,7 +14,7 @@ class _SplashPageState extends State<SplashPage> {
 
   // ignore: non_constant_identifier_names
   Future<void> NavigatorPage() async {
-    Navigator.of(context).pushNamed('/login');
+    Navigator.of(context).pushNamed('/base');
   }
 
   @override

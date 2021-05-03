@@ -10,6 +10,7 @@ class ItemTile extends StatelessWidget {
     @required this.isSelect,
     @required this.isExpansion,
     @required this.iconData,
+    this.isSelect2,
     this.childTitle,
     this.childTitle2,
     this.onTap2,
@@ -23,6 +24,7 @@ class ItemTile extends StatelessWidget {
   final Function onTap;
   final Function onTap2;
   final bool isSelect;
+  final bool isSelect2;
   final bool isExpansion;
   final String childTitle;
   final String childTitle2;
@@ -31,7 +33,7 @@ class ItemTile extends StatelessWidget {
   Widget build(BuildContext context) {
     if (isExpansion == false) {
       return Material(
-        color: Colors.transparent,
+        color: isSelect ? Colors.teal.shade50 : Colors.transparent,
         child: InkWell(
           onTap: onTap,
           child: Container(
@@ -64,17 +66,18 @@ class ItemTile extends StatelessWidget {
         child: ExpansionTile(
           tilePadding: EdgeInsets.only(left: 12, right: 10),
           backgroundColor: Colors.teal.shade50,
+          collapsedBackgroundColor: isSelect || isSelect2 ? Colors.teal.shade50 : Colors.transparent,
           title: Text(
             textTitle,
             style: TextStyle(
               fontSize: 14,
-                color: isSelect ? Colors.teal.shade700 : Colors.grey[600]),
+                color:isSelect || isSelect2 ? Colors.teal.shade700 : Colors.grey[600]),
             textAlign: TextAlign.start,
           ),
           leading: Icon(
             iconData,
             size: 18,
-            color: isSelect ? Colors.teal.shade700 : Colors.grey[600],
+            color: isSelect || isSelect2 ? Colors.teal.shade700 : Colors.grey[600],
           ),
           children: [
             Material(
@@ -120,7 +123,7 @@ class ItemTile extends StatelessWidget {
                       Icon(
                         childIcon2,
                         size: 18,
-                        color: isSelect
+                        color: isSelect2
                             ? Colors.teal.shade700
                             : Colors.grey[600],
                       ),
@@ -130,7 +133,7 @@ class ItemTile extends StatelessWidget {
                       Text(
                         childTitle2,
                         style: TextStyle(
-                            color: isSelect
+                            color: isSelect2
                                 ? Colors.teal.shade700
                                 : Colors.grey[600]),
                       )
