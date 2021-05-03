@@ -4,7 +4,7 @@ import 'package:todo_mascotas_admin/app/global_store/page_store.dart';
 import 'package:mobx/mobx.dart';
 import 'package:todo_mascotas_admin/app/global_widgets/custom_drawer/desktop/custom_drawer.dart';
 import 'package:todo_mascotas_admin/app/modules/home/home_page.dart';
-import 'package:todo_mascotas_admin/app/modules/home/widgets/custom_appbar.dart';
+import 'package:todo_mascotas_admin/app/global_widgets/custom_appBar/custom_appbar.dart';
 import 'package:todo_mascotas_admin/app/modules/pedidos/pedidos_page.dart';
 
 class BasePage extends StatefulWidget {

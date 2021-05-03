@@ -33,7 +33,7 @@ dependencies:
   responsive_builder: ^0.4.1
   font_awesome_flutter: ^9.0.0
   google_fonts: ^2.0.0
-  flutter_slider_drawer: ^2.0.0
+  flutter_spinkit: any
 
 dev_dependencies:
   mobx_codegen:

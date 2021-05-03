@@ -11,6 +11,7 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      automaticallyImplyLeading: false,
       backgroundColor: Colors.grey[50],
       elevation: 1,
       actions: [
@@ -21,7 +22,9 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
               size: 18,
               color: Colors.teal.shade400,
             ),
-            onPressed: (){}
+            onPressed: (){
+            print('email');
+            }
         ),
         const SizedBox(width: 15,),
         IconButton(
@@ -31,17 +34,22 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
               size: 18,
               color: Colors.teal.shade400,
             ),
-            onPressed: (){}
+            onPressed: (){
+
+              print('notifications');
+            }
         ),
         const SizedBox(width: 15,),
         IconButton(
             splashRadius: 20,
             icon: Icon(
-              FontAwesomeIcons.cogs,
+              FontAwesomeIcons.cog,
               size: 18,
               color: Colors.teal.shade400,
             ),
-            onPressed: (){}
+            onPressed: (){
+              print('settings');
+            }
         ),
         const SizedBox(width: 10,),
       ],
